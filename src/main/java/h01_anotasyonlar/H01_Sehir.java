@@ -26,14 +26,19 @@ import javax.persistence.Table;
 // - @Transient anotasyonu bir degiskenin (sutun) tabloda yer almayacagini gosterir.
 
 @Entity
-@Table(name="sehir_tablosu")
+@Table(name = "sehir_tablosu")
 public class H01_Sehir {
 
 
     @Id
-    @Column(name="cityPlaka")
-private int sehirPlaka;
-private String sehirAd;
+    @Column(name = "cityPlaka")
+    private int sehirPlaka;
+
+
+
+
+    private String sehirAd;
+
     public int getSehirPlaka() {
         return sehirPlaka;
     }
@@ -48,6 +53,19 @@ private String sehirAd;
 
     public void setSehirAd(String sehirAd) {
         this.sehirAd = sehirAd;
+    }
+
+    public H01_Sehir(int sehirPlaka, String sehirAd) {
+        this.sehirPlaka = sehirPlaka;
+        this.sehirAd = sehirAd;
+    }
+
+    @Override
+    public String toString() {
+        return "H01_Sehir{" +
+                "sehirPlaka=" + sehirPlaka +
+                ", sehirAd='" + sehirAd + '\'' +
+                '}';
     }
 
 }
