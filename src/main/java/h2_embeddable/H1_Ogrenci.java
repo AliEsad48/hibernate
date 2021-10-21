@@ -28,6 +28,38 @@ public class H1_Ogrenci {
     public H1_Ogrenci() {
     }
 
+    public int getOgrId() {
+        return ogrId;
+    }
+
+    public void setOgrId(int ogrId) {
+        this.ogrId = ogrId;
+    }
+
+    public String getOgrAd() {
+        return ogrAd;
+    }
+
+    public void setOgrAd(String ogrAd) {
+        this.ogrAd = ogrAd;
+    }
+
+    public int getOgrNot() {
+        return ogrNot;
+    }
+
+    public void setOgrNot(int ogrNot) {
+        this.ogrNot = ogrNot;
+    }
+
+    public H2_Dersler getDersler() {
+        return dersler;
+    }
+
+    public void setDersler(H2_Dersler dersler) {
+        this.dersler = dersler;
+    }
+
     @Override
     public String toString() {
         return "H1_Ogrenci{" +
