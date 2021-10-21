@@ -1,4 +1,4 @@
-package h2_emmedable;
+package h2_embeddable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
