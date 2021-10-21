@@ -17,6 +17,10 @@ public class H03_Fetch {
 
         System.out.println(session.get(H01_Sehir.class, 34));
 
+        System.out.println(session.get(H01_Sehir.class, 35).getSehirAd());
+
+        tx.commit();
+
     }
 
 }
