@@ -50,6 +50,8 @@ public class H3_Save {
 
         tx.commit();
 
+        sf.close();
+        session.close();
 
     }
 
